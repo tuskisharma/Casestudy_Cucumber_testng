@@ -25,13 +25,13 @@ public class step_definition {
 		driver.manage().window().maximize();
 		driver.findElement(By.xpath("//*[@name='userName']")).sendKeys(string);
 	}
-	@When("Enter the password {string}")
+	@And("Enter the password {string}")
 	public void enter_the_password(String string) {
 		
 		driver.findElement(By.xpath("//*[@name='password']")).sendKeys(string);
 		
 	}
-	@When("Click on the login button")
+	@And("Click on the login button")
 	public void click_on_the_login_button() {
 		driver.findElement(By.xpath("//*[@name='submit']")).click();
 	}
